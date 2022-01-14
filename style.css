@@ -47,25 +47,38 @@ span {
   padding-bottom: 2%;
 }
 
-#input {
+#form {
   padding-bottom: 5%;
+  position: relative;
 }
+
 input {
   border-radius: 25px;
   width: 60%;
   padding: 2% 0;
   background-color: var(--shadow);
   position: relative;
+  z-index: 1;
+}
+#msg {
+  color: var(--SoftRed);
+}
+
+#icon-error {
+  position: relative;
+  z-index: 2;
+  margin-left: -15%;
+  visibility: hidden;
 }
 
 button {
   width: 5rem;
-  padding: 1% 0;
+  padding: 2.2% 0;
   border-radius: 25px;
   border: none;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   position: absolute;
-  margin-left: -5%;
+  z-index: 2;
 }
 button:hover {
   cursor: pointer;
@@ -88,9 +101,7 @@ button:hover {
   color: hsl(228, 45%, 44%);
 }
 
-/* #desktop-img {
-  display: block;
-} */
+/* hero img - desktop and mobile*/
 #mobile-img {
   display: none;
 }
@@ -98,7 +109,7 @@ button:hover {
   display: block;
 }
 
-@media (max-width: 760px) {
+@media screen and (max-width: 768px) {
   #desktop-img {
     display: none;
   }
@@ -148,12 +159,15 @@ button:hover {
   }
   input {
     border-radius: 25px;
-    width: 100%;
-    padding: 2% 0;
+    width: 90%;
+    padding: 5% 0;
   }
   button {
-    width: 4rem;
-    padding: 1% 0;
-    margin-left: -8%;
+    width: 5rem;
+    padding: 5% 0;
+    margin-left: -2%;
+  }
+  #icon-error {
+    margin-left: -30%;
   }
 }

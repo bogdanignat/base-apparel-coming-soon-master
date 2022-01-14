@@ -44,9 +44,14 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <form id="input" class="col justify-content-md-center">
+          <form id="form" class="col justify-content-md-center">
             <input type="email" name="Email Address " id="email" required />
-            <button><img src="./images/icon-arrow.svg" alt="" /></button>
+            <img id="icon-error" src="./images/icon-error.svg" alt="" />
+            <button id="btn">
+              <img src="./images/icon-arrow.svg" alt="" />
+            </button>
+            <br />
+            <span id="msg"></span>
           </form>
         </div>
         <div class="col embed-responsive col2">
@@ -61,7 +66,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Bogdan Ignat</a>.
+        >. Coded by <a href="https://github.com/bogdanignat">Bogdan Ignat</a>.
       </p>
     </footer>
   </body>
@@ -70,4 +75,5 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <script src="input.js"></script>
 </html>
