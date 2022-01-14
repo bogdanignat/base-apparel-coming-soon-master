@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+  --DesaturatedRed: hsl(0, 36%, 70%);
+  --SoftRed: hsl(0, 93%, 68%);
+  --DarkGray: hsl(0, 6%, 24%);
+  --shadow: hsl(0, 100%, 98%);
+  --hover: hsl(0, 80%, 86%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif, helvetica, Arial;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+  padding-left: 15%;
+}
+
+header {
+  padding-top: 3%;
+  width: auto;
+  height: auto;
+  position: absolute;
+}
+
+#paragraph1 {
+  padding-top: 30%;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: var(--DesaturatedRed);
+  text-align: left;
+  line-height: 4rem;
+  letter-spacing: 1rem;
+}
+span {
+  color: var(--DarkGray);
+  font-weight: bold;
+}
+
+#paragraph2 {
+  width: 60%;
+  text-align: left;
+  color: var(--DesaturatedRed);
+  font-weight: 600;
+  padding-bottom: 2%;
+}
+
+#input {
+  padding-bottom: 5%;
+}
+input {
+  border-radius: 25px;
+  width: 60%;
+  padding: 2% 0;
+  background-color: var(--shadow);
+  position: relative;
+}
+
+button {
+  width: 5rem;
+  padding: 1% 0;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  position: absolute;
+  margin-left: -5%;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 10px var(--DesaturatedRed);
+  background: var(--hover);
+}
+
+#desktop-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 1%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* #desktop-img {
+  display: block;
+} */
+#mobile-img {
+  display: none;
+}
+#desktop-img {
+  display: block;
+}
+
+@media (max-width: 760px) {
+  #desktop-img {
+    display: none;
+  }
+  #mobile-img {
+    display: flex;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .col1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .col2 {
+    padding-top: 15%;
+  }
+  header {
+    padding-left: 10%;
+  }
+  #paragraph1 {
+    padding-top: 15%;
+    line-height: 3rem;
+    letter-spacing: 1rem;
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  span {
+    text-align: center;
+  }
+
+  #paragraph2 {
+    width: auto;
+    text-align: center;
+  }
+  input {
+    border-radius: 25px;
+    width: 100%;
+    padding: 2% 0;
+  }
+  button {
+    width: 4rem;
+    padding: 1% 0;
+    margin-left: -8%;
+  }
+}
